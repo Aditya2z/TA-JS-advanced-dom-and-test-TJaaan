@@ -19,8 +19,8 @@ quotesToShow.forEach((quote) => {
 });
 
 function handleScroll() {
-  const isBottomReached =
-    window.innerHeight + window.scrollY >= document.body.offsetHeight;
+  const isBottomReached = document.documentElement.scrollTop + document.documentElement.clientHeight >=
+     document.documentElement.scrollHeight;
   if (!isBottomReached) return;
 
   const newQuotes = quotes.slice(quotesRendered, quotesRendered + 1);
@@ -34,6 +34,8 @@ function handleScroll() {
       root.append(b, p);
       quotesRendered++;
     });
+  } else {
+    quotesRendered = 0;
   }
 }
 
