@@ -1,0 +1,229 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Custom Styling Starts Here */
+
+/* My Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+/* General Styles */
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Pacifico", cursive;
+  max-width: 1370px;
+  width: 100%;
+  line-height: 1.5;
+}
+button,
+input,
+select,
+textarea {
+  font-family: "Pacifico", cursive;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  padding: 0;
+  font-weight: 600;
+}
+img,
+audio,
+video {
+  width: 100%;
+}
+
+/* Variables */
+:root {
+  --primary: black;
+  --secondary: pink;
+  --tertiary: brown;
+}
+
+/* Containers */
+.container-60 {
+  max-width: 60%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Flex */
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.flex-24 {
+  flex: 0 1 24%;
+}
+.flex-32 {
+  flex: 0 1 32%;
+}
+.flex-49 {
+  flex: 0 1 49%;
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Texts */
+
+p {
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+.author {
+  font-size: 1.5rem;
+  margin-bottom: 6rem;
+}
