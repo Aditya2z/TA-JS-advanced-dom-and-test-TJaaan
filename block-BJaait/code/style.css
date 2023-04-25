@@ -1,0 +1,142 @@
+/* Custom Styling Starts Here */
+
+/* My Resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+/* General Styles */
+html {
+    font-size: 16px;
+}
+body {
+    background-color: var(--primary);
+    max-width: 1370px;
+    width: 100%;
+    line-height: 1.5;
+    color: white;
+}
+button,
+input,
+select,
+textarea {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    padding: 0;
+    font-weight: 600;
+}
+img,
+audio,
+video {
+    width: 100%;
+}
+
+/* Variables */
+:root {
+    --primary:  #286FF2;
+    --secondary: example
+    --tertiary: example
+}
+
+/* Containers */
+.container-50{
+    max-width: 50%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Flex */
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.flex-24 {
+    flex: 0 1 24%;
+}
+.flex-32 {
+    flex: 0 1 32%;
+}
+.flex-49 {
+    flex: 0 1 49%;
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+/* Texts */
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0.5rem;
+}
+
+/* Buttons */
+.btn {
+    background: var(--primary);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem 2rem;
+    border-radius: .25rem;
+}
+input {
+    border: 1px solid white;
+    padding: 1rem;
+    background-color: var(--primary);
+    width: 50%;
+    color: white;
+}
+input::placeholder {
+    color: white;
+}
+.box {
+    padding: .5rem;
+    background-color: white;
+    color: var(--primary);
+    width: 50%;
+    margin: .5rem auto;
+    display: flex;
+    justify-content: space-between;
+    cursor: move;
+}
+.hide {
+    display: none;
+}
+.box:hover > .hide {
+    display: flex;
+}
