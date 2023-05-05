@@ -1,15 +1,15 @@
 // 1. Write a function named `getFullName` that accepts two input `firstName` and `lastName` and return the `fullName`
 function getFullName(firstName = "", lastName = "") {
-    if(typeof firstName !== 'string' || typeof lastName !== 'string') {
-      return undefined;
-    }
+  if (typeof firstName !== "string" || typeof lastName !== "string") {
+    return undefined;
+  }
   
-    if(firstName && lastName) {
-      return `${firstName} ${lastName}`;
-    }
-    if(firstName) return firstName;
-    if(lastName) return lastName;
-  }  
+  if (firstName && lastName) {
+    return `${firstName} ${lastName}`;
+  }
+  if (firstName) return firstName;
+  if (lastName) return lastName;
+}
 
 // 2. Write a function named `isPalindrome` that accepts one input returns `true` or `false` based on wether the value passed is palindrome or not.
 function isPalindrome(value) {
