@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest --passWithNoTests"
+    "test": "jest --watchAll --passWithNoTests"
   },
   "author": "AltCampus",
   "license": "GNU GPL V3",
