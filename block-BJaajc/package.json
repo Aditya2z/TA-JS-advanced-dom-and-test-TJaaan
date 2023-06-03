@@ -4,11 +4,11 @@
   "description": "",
   "main": "",
   "scripts": {
-    "test": ""
+    "test": "jest --passWithNoTests"
   },
   "author": "AltCampus",
   "license": "GNU GPL V3",
-  "devDependencies": {
-    "jest": "^29.5.0"
+  "dependencies": {
+    "jest": "^26.0.1"
   }
 }
